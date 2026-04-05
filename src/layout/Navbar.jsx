@@ -1,5 +1,5 @@
 import { Button } from "@/components/Button";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [{href:"#about", label:"About"}, {href:"#experience", label:"Experience"}, {href:"#projects", label:"Projects"}]
@@ -24,17 +24,17 @@ export const Navbar = () => {
     </div>
 {/* CTA Button  */}
     <div className="hidden md:block">
-      <Button size="sm">
+      <Button size="sm" className="cursor-pointer">
         Download my CV
       </Button>
     </div>
 {/* mobile hamburguer */}
     <button className="md:hidden p-2 text-primary" onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
-        <Menu />
+        {isMobileMenuOpen ? <X /> : <Menu />}
     </button>
     </nav>
     {isMobileMenuOpen && (
-    <div className="md:hidden">
+    <div className="md:hidden animate-fade-in">
       <div className="container mx-auto p-6 flex flex-col gap-4">
          {navLinks.map((link, index) => (
           <a href={link.href} key={index} className="px-4 text-sm hover:text-primary" onClick = {() => setIsMobileMenuOpen(false)}>
