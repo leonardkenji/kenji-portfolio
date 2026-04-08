@@ -33,42 +33,48 @@
     background-color: color-mix(in srgb, var(--color-muted) 50%, transparent);
     backdrop-filter: blur(16px);
     border: 1px solid var(--color-muted);  }
+
+  .glow-text{
+    text-shadow: 0 0 30px
+      color-mix(in srgb, var(--color-primary) 50%, transparent);
+  }
 }
 
 @layer utilities {
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-      filter: blur(10px);
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        filter: blur(10px);
+      }
+      to {
+        opacity: 1;
+        filter: blur(0px);
+      }
     }
-    to {
-      opacity: 1;
-      filter: blur(0px);
+    @keyframes slow-drift{
+      0%,
+      100%{
+        transform: translate(0px, 0px);
+      }
+      25%{
+        transform: translate(10px, -5px);
+      }
+      50%{
+        transform: translate(-5px, 15px);
+      }
+      75%{
+        transform: translate(15px, 10px);
+      }
+    }
+    .animate-fade-in{
+      animation: fade-in 0.8s ease-out both;
+    }
+
+    .animation-delay-300{
+      animation-delay: 300ms;
     }
   }
-  @keyframes slow-drift{
-    0%,
-    100%{
-      transform: translate(0px, 0px);
-    }
-    25%{
-      transform: translate(10px, -5px);
-    }
-    50%{
-      transform: translate(-5px, 15px);
-    }
-    75%{
-      transform: translate(15px, 10px);
-    }
 
-  .animate-fade-in{
-    animation: fade-in 0.3s;
-  }
-
-
-
-  }
-}
 
 
 :root {
