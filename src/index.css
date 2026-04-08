@@ -2,7 +2,7 @@
 
 @theme {
   --color-background: #FEFDFF;
-  --color-foreground: #C1BFB5;
+  --color-foreground: #9c9b97;
 
   --color-primary: #EB4511;
   --color-primary-foreground: #f8f8f8;
@@ -79,7 +79,7 @@
 
 :root {
   --color-background: #FEFDFF;
-  --color-foreground: #C1BFB5;
+  --color-foreground: #9c9b97;
 
   --color-primary: #EB4511;
   --color-primary-foreground: #f8f8f8;

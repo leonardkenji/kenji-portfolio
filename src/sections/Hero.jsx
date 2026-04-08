@@ -1,7 +1,7 @@
 import { __unstable__loadDesignSystem } from "tailwindcss";
 import { Button } from "@/components/Button";
 import { Download } from "lucide-react";
-import React from 'react';
+import StackIcon from "tech-stack-icons";
 
 
 export const Hero = () => {
@@ -64,11 +64,45 @@ export const Hero = () => {
               <a key={index} href={social.href}> {social.icon}</a>
             ))}
           </div>
+          <div className="hidden md:block animate-fade-in container mx-auto mt-8 pr-20 leading-loose">
+            <span className="text-primary font-bold text-2xl">Full-Stack Software Engineer</span> based in Japan, specializing in web applications with <span className="text-primary font-bold">AI-driven features</span>. I combine strong technical skills with a solid background in digital marketing to build products that are both scalable and user-focused. Previously worked in end-to-end marketing roles at venture and global companies, including Easy car RIDE, Tokyo Supercars, Croud (London, remote), and Edelman PR (São Paulo). This experience allows me to <span className="text-primary font-bold">bridge business strategy and technical execution</span>. Currently focused on developing AI-powered applications and open to opportunities in product, growth, or full-stack engineering roles.
+          </div>
+          <div className="hidden md:block animate-fade-in container mx-auto my-6 px-6 text-center ">
+            <p className="text-2xl">Technologies I work with</p>
+            <div className="mt-4 flex gap-3 justify-center">
+              <StackIcon name="rails" className="w-8 h-8"/>
+              <StackIcon name="stimulus" className="w-8 h-8"/>
+              <StackIcon name="bootstrap5" className="w-8 h-8"/>
+              <StackIcon name="react" className="w-8 h-8"/>
+              <StackIcon name="postgresql" className="w-8 h-8"/>
+              <StackIcon name="claude" className="w-8 h-8"/>
+              <StackIcon name="meta" className="w-8 h-8"/>
+              <StackIcon name="google" className="w-8 h-8"/>
+              <StackIcon name="ae" className="w-8 h-8"/>
+              <StackIcon name="figma" className="w-8 h-8"/>
+            </div>
+          </div>
         </div>
 
         {/* Images  */}
-        <div>
-          <img src="/Kenji.png" alt="" />
+        <div className="animate-fade-in">
+          <img src="/Kenji.png" alt="Leonardo Kenji Kawashita" className="w-full aspect-[5/5] object-cover rounded-2xl"/>
+        </div>
+      </div>
+        {/* Skills  */}
+      <div className="md:hidden animate-fade-in container mx-auto my-6 px-6 text-center ">
+        <p className="text-2xl">Technologies I work with</p>
+        <div className="mt-4 flex gap-3 justify-center">
+          <StackIcon name="rails" className="w-8 h-8"/>
+          <StackIcon name="stimulus" className="w-8 h-8"/>
+          <StackIcon name="bootstrap5" className="w-8 h-8"/>
+          <StackIcon name="react" className="w-8 h-8"/>
+          <StackIcon name="postgresql" className="w-8 h-8"/>
+          <StackIcon name="claude" className="w-8 h-8"/>
+          <StackIcon name="meta" className="w-8 h-8"/>
+          <StackIcon name="google" className="w-8 h-8"/>
+          <StackIcon name="ae" className="w-8 h-8"/>
+          <StackIcon name="figma" className="w-8 h-8"/>
         </div>
       </div>
     </div>
