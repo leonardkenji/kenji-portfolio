@@ -42,7 +42,7 @@ const personalExperience = [{
 }
 ]
 export const Experience = () => {
-  return <section className="relative overflow-hidden px-4 py-4">
+  return <section id="experience" className="relative overflow-hidden px-4 py-4">
     <div className="container mx-auto px-6 relative z-10">
       <div className="animate-fade-in container mx-auto px-6 text-center">
         <p className="text-2xl font-bold mb-5">Professional Background</p>

@@ -3,36 +3,37 @@ import { ExternalLink } from "lucide-react";
 const personalProjects = [
   {
     title: "JP4U ERP",
-    description: "A web-application for a proxy-buying proxy-shipping company. For the admins: inventory management, invoice generator, shipping label generator with JP Post API, scrape function for Mercari and Yahoo related sites. For the user: Your own inventory management and shipment request",
+    description: "A web application for a proxy shopping and forwarding company. For admins, it includes inventory management, invoice generation, shipping label generation with the JP Post API, and scraping features for Mercari and Yahoo-related sites. For users, it provides personal inventory management and shipment requests.",
     image: "public/JP4UApp.png",
     tags: ["Rails", "LLM", "Stimulus", "Bootstrap"],
     link: "https://www.jp4u.online/",
     Github: "https://github.com/leonardkenji/jp4u",
   },
   {
-  title: "Pokeclo",
-  description: "A digital closet app where you can manage your clothing, build outfits, use to prove new clothes with your current clothes when at the shop before buy it",
-  image: "public/POKECLO.png",
-  tags: ["Rails", "LLM", "Stimulus", "Bootstrap"],
-  link: "https://www.pokeclo.online/",
-  Github: "https://github.com/GerthIII/pokeclo",
-},
-{
-  title: "Poke Adventure Planner",
-  description: "A web-application with a built in AI feature to help you build Pokemon teams for teh main games.",
-  image: "public/PokeAdventure.png",
-  tags: ["Rails", "LLM", "Stimulus", "Bootstrap"],
-  link: "https://www.poke-adventure-planner.site/",
-  Github: "https://github.com/GerthIII/pokemon-adventure-planner",
-},
-{
-  title: "JDM Hunter",
-  description: "A web-application where you can see all your favorite JDM for sale in japanese online car sales web site in one single place.",
-  image: "public/NSX.png",
-  tags: [""],
-  link: "",
-  Github: "",
-}]
+    title: "Pokeclo",
+    description: "A digital closet app where you can manage your clothes, build outfits, and try new pieces with your existing wardrobe while shopping before buying them.",
+    image: "public/POKECLO.png",
+    tags: ["Rails", "LLM", "Stimulus", "Bootstrap"],
+    link: "https://www.pokeclo.online/",
+    Github: "https://github.com/GerthIII/pokeclo",
+  },
+  {
+    title: "Poke Adventure Planner",
+    description: "A web application with a built-in AI feature to help you build Pokemon teams for the main games.",
+    image: "public/PokeAdventure.png",
+    tags: ["Rails", "LLM", "Stimulus", "Bootstrap"],
+    link: "https://www.poke-adventure-planner.site/",
+    Github: "https://github.com/GerthIII/pokemon-adventure-planner",
+  },
+  {
+    title: "JDM Hunter",
+    description: "A web application where you can see your favorite JDM cars for sale across Japanese online car sales websites in one place.",
+    image: "public/NSX.png",
+    tags: [],
+    link: "",
+    Github: "",
+  }
+];
 
 export const Projects = () => {
   return <section id="projects" className="py-4 relative overflow-hidden">
@@ -57,7 +58,7 @@ export const Projects = () => {
               </div>
               <div className="p-2 flex flex-wrap gap-2">
                 {project.tags.map((tag, index) => (
-                  <div key={index} className="bg-primary text-background rounded-full px-4 py2 text-sm">
+                  <div key={index} className="bg-primary text-background rounded-full px-4 py-2 text-sm">
                     {tag}
                   </div>
                 ))}

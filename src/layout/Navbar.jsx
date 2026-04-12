@@ -2,7 +2,8 @@ import { Button } from "@/components/Button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
-const navLinks = [{href:"#about", label:"About"}, {href:"#experience", label:"Experience"}, {href:"#projects", label:"Projects"}]
+const navLinks = [{href:"#about", label:"About"}, {href:"#experience", label:"Experience"}, {href:"#projects", label:"Projects"}];
+const CV_FILE_PATH = "/Leonardo-Kenji-Kawashita-CV.pdf";
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,11 +25,11 @@ export const Navbar = () => {
     </div>
 {/* CTA Button  */}
     <div className="hidden md:block">
-      <Button size="sm" className="cursor-pointer">
+      <Button size="sm" className="cursor-pointer" href={CV_FILE_PATH} download>
         Download my CV
       </Button>
     </div>
-{/* mobile hamburguer */}
+{/* mobile hamburger */}
     <button className="md:hidden p-2 text-primary" onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
         {isMobileMenuOpen ? <X /> : <Menu />}
     </button>
@@ -41,7 +42,7 @@ export const Navbar = () => {
             {link.label}
           </a>
         ))}
-        <Button size="sm">
+        <Button size="sm" href={CV_FILE_PATH} download onClick={() => setIsMobileMenuOpen(false)}>
         Download my CV
       </Button>
       </div>

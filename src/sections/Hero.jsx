@@ -1,20 +1,24 @@
-import { __unstable__loadDesignSystem } from "tailwindcss";
 import { Button } from "@/components/Button";
 import { Download } from "lucide-react";
 import StackIcon from "tech-stack-icons";
 
+const CV_FILE_PATH = "/Leonardo-Kenji-Kawashita-CV.pdf";
+const HERO_PARTICLES = Array.from({ length: 30 }, () => ({
+  left: `${Math.random() * 100}%`,
+  top: `${Math.random() * 100}%`,
+}));
 
 export const Hero = () => {
-  return <section className="relative min-h-screen flex items-center overflow-hidden">
+  return <section id="about" className="relative min-h-screen flex items-center overflow-hidden">
 
     {/* black dots */}
     <div className= "absolute inset-0 overflow-hidden pointer-events-none">
-    {[...Array(30)].map((_, i) => (
+    {HERO_PARTICLES.map((particle, i) => (
       <div key={i} className="absolute w-1 h-1 rounded-full opacity-20"
       style={{
         backgroundColor: "#000000",
-        left: `${Math.random() * 100}%`,
-        top: `${Math.random() * 100}%`,
+        left: particle.left,
+        top: particle.top,
         animation: `slow-drift 30s ease-in-out infinite`
       }}
     />
@@ -31,7 +35,9 @@ export const Hero = () => {
           </div>
           {/* Download CV BT  */}
           <div className="mt-5 animation-delay-300">
-            <Button size="default"> <Download /> Donwload CV </Button>
+            <Button size="default" href={CV_FILE_PATH} download>
+              <Download /> Download CV
+            </Button>
           </div>
           {/* Social Links   */}
           <div className="my-5 animation-delay-300 flex gap-4 items-center animate-fade-in">
