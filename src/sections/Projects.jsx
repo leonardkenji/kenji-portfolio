@@ -4,7 +4,7 @@ const personalProjects = [
   {
     title: "JP4U ERP",
     description: "A web application for a proxy shopping and forwarding company. For admins, it includes inventory management, invoice generation, shipping label generation with the JP Post API, and scraping features for Mercari and Yahoo-related sites. For users, it provides personal inventory management and shipment requests.",
-    image: "public/JP4UApp.png",
+    image: "/JP4UApp.png",
     tags: ["Rails", "LLM", "Stimulus", "Bootstrap"],
     link: "https://www.jp4u.online/",
     Github: "https://github.com/leonardkenji/jp4u",
@@ -12,7 +12,7 @@ const personalProjects = [
   {
     title: "Pokeclo",
     description: "A digital closet app where you can manage your clothes, build outfits, and try new pieces with your existing wardrobe while shopping before buying them.",
-    image: "public/POKECLO.png",
+    image: "/POKECLO.png",
     tags: ["Rails", "LLM", "Stimulus", "Bootstrap"],
     link: "https://www.pokeclo.online/",
     Github: "https://github.com/GerthIII/pokeclo",
@@ -20,7 +20,7 @@ const personalProjects = [
   {
     title: "Poke Adventure Planner",
     description: "A web application with a built-in AI feature to help you build Pokemon teams for the main games.",
-    image: "public/PokeAdventure.png",
+    image: "/PokeAdventure.png",
     tags: ["Rails", "LLM", "Stimulus", "Bootstrap"],
     link: "https://www.poke-adventure-planner.site/",
     Github: "https://github.com/GerthIII/pokemon-adventure-planner",
@@ -28,7 +28,7 @@ const personalProjects = [
   {
     title: "JDM Hunter",
     description: "A web application where you can see your favorite JDM cars for sale across Japanese online car sales websites in one place.",
-    image: "public/NSX.png",
+    image: "/NSX.png",
     tags: [],
     link: "",
     Github: "",
