@@ -34,7 +34,7 @@ export const Hero = () => {
             <Button size="default"> <Download /> Donwload CV </Button>
           </div>
           {/* Social Links   */}
-          <div className="mt-5 animation-delay-300 flex gap-4 items-center animate-fade-in">
+          <div className="my-5 animation-delay-300 flex gap-4 items-center animate-fade-in">
             <p>Follow me:</p>
             {[{ icon: <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -64,11 +64,11 @@ export const Hero = () => {
               <a key={index} href={social.href}> {social.icon}</a>
             ))}
           </div>
-          <div className="hidden md:block animate-fade-in container mx-auto mt-8 pr-20 leading-loose">
+          <div className="hidden md:block animate-fade-in container mx-auto leading-loose">
             <span className="text-primary font-bold text-2xl">Full-Stack Software Engineer</span> based in Japan, specializing in web applications with <span className="text-primary font-bold">AI-driven features</span>. I combine strong technical skills with a solid background in digital marketing to build products that are both scalable and user-focused. Previously worked in end-to-end marketing roles at venture and global companies, including Easy car RIDE, Tokyo Supercars, Croud (London, remote), and Edelman PR (São Paulo). This experience allows me to <span className="text-primary font-bold">bridge business strategy and technical execution</span>. Currently focused on developing AI-powered applications and open to opportunities in product, growth, or full-stack engineering roles.
           </div>
           <div className="hidden md:block animate-fade-in container mx-auto my-6 px-6 text-center ">
-            <p className="text-2xl">Technologies I work with</p>
+            <p className="text-2xl font-bold">Technologies I work with</p>
             <div className="mt-4 flex gap-3 justify-center">
               <StackIcon name="rails" className="w-8 h-8"/>
               <StackIcon name="stimulus" className="w-8 h-8"/>
@@ -86,12 +86,12 @@ export const Hero = () => {
 
         {/* Images  */}
         <div className="animate-fade-in">
-          <img src="/Kenji.png" alt="Leonardo Kenji Kawashita" className="w-full aspect-[5/5] object-cover rounded-2xl"/>
+          <img src="/Kenji.png" alt="Leonardo Kenji Kawashita" className="w-full aspect-5/5 object-cover rounded-2xl"/>
         </div>
       </div>
         {/* Skills  */}
       <div className="md:hidden animate-fade-in container mx-auto my-6 px-6 text-center ">
-        <p className="text-2xl">Technologies I work with</p>
+        <p className="text-2xl font-bold">Technologies I work with</p>
         <div className="mt-4 flex gap-3 justify-center">
           <StackIcon name="rails" className="w-8 h-8"/>
           <StackIcon name="stimulus" className="w-8 h-8"/>
