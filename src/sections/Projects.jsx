@@ -26,12 +26,12 @@ const personalProjects = [
     Github: "https://github.com/GerthIII/pokemon-adventure-planner",
   },
   {
-    title: "JDM Hunter",
-    description: "A web application where you can see your favorite JDM cars for sale across Japanese online car sales websites in one place.",
-    image: "/NSX.png",
-    tags: [],
+    title: "Messenger-LLM Bot",
+    description: "A app to connect a LLM with your company Facebook Messenger to deal with first contact with customers. The app stack is Rails, facebook graph api and ngrok webhook for testing",
+    image: "/MessengerBot.png",
+    tags: ["Rails", "LLM", "webhook", "Tailwind"],
     link: "",
-    Github: "",
+    Github: "https://github.com/leonardkenji/messenger-bot",
   }
 ];
 
