@@ -2,6 +2,22 @@ import { ExternalLink } from "lucide-react";
 
 const personalProjects = [
   {
+    title: "Age in Days Calculator",
+    description: "JAVA backend - React front App to calculate your age in days and months.",
+    image: "/JavaReact.png",
+    tags: ["Java", "JavaScript", "SpringBoot", "React", "REST API"],
+    link: "",
+    Github: "https://github.com/leonardkenji/age-calculator",
+  },
+  {
+    title: "Messenger-LLM Bot",
+    description: "An app to connect a LLM with your company Facebook Messenger to deal with first contact with customers. The app stack is Rails, facebook graph api and ngrok webhook for testing",
+    image: "/MessengerBot.png",
+    tags: ["Rails", "LLM", "webhook", "Tailwind"],
+    link: "",
+    Github: "https://github.com/leonardkenji/messenger-bot",
+  }
+  {
     title: "JP4U ERP",
     description: "A web application for a proxy shopping and forwarding company. For admins, it includes inventory management, invoice generation, shipping label generation with the JP Post API, and scraping features for Mercari and Yahoo-related sites. For users, it provides personal inventory management and shipment requests.",
     image: "/JP4UApp.png",
@@ -24,14 +40,6 @@ const personalProjects = [
     tags: ["Rails", "LLM", "Stimulus", "Bootstrap"],
     link: "https://www.poke-adventure-planner.site/",
     Github: "https://github.com/GerthIII/pokemon-adventure-planner",
-  },
-  {
-    title: "Messenger-LLM Bot",
-    description: "A app to connect a LLM with your company Facebook Messenger to deal with first contact with customers. The app stack is Rails, facebook graph api and ngrok webhook for testing",
-    image: "/MessengerBot.png",
-    tags: ["Rails", "LLM", "webhook", "Tailwind"],
-    link: "",
-    Github: "https://github.com/leonardkenji/messenger-bot",
   }
 ];
 
