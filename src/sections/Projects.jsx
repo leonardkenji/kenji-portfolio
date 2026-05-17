@@ -16,7 +16,7 @@ const personalProjects = [
     tags: ["Rails", "LLM", "webhook", "Tailwind"],
     link: "",
     Github: "https://github.com/leonardkenji/messenger-bot",
-  }
+  },
   {
     title: "JP4U ERP",
     description: "A web application for a proxy shopping and forwarding company. For admins, it includes inventory management, invoice generation, shipping label generation with the JP Post API, and scraping features for Mercari and Yahoo-related sites. For users, it provides personal inventory management and shipment requests.",
