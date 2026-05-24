@@ -2,6 +2,22 @@ import { ExternalLink } from "lucide-react";
 
 const personalProjects = [
   {
+    title: "Prato - Recipes App for selective eating",
+    description: "A full-stack recipe repository built with Ruby on Rails, designed for selective eaters. Features advanced filtering by color, temperature, taste, and consistency to help users find the perfect meal.",
+    image: "/prato.png",
+    tags: ["Ruby", "Rails", "PostgreSQL", "Tailwind", "Stimulus"],
+    link: "",
+    Github: "https://github.com/leonardkenji/gaijintuned",
+  },
+  {
+    title: "Spring Boot CRUD Rest API",
+    description: "JAVA backend - Rest API with JAVA and Spring Boot for an MVC and using PostgreSQL as database.",
+    image: "/JavaSpringBoot.png",
+    tags: ["Java", "SpringBoot", "REST API", "PostgreSQL", "Postman"],
+    link: "",
+    Github: "https://github.com/leonardkenji/gaijintuned",
+  },
+  {
     title: "Age in Days Calculator",
     description: "JAVA backend - React front App to calculate your age in days and months.",
     image: "/JavaReact.png",
