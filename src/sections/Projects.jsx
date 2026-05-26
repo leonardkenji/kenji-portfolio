@@ -7,7 +7,7 @@ const personalProjects = [
     image: "/prato.png",
     tags: ["Ruby", "Rails", "PostgreSQL", "Tailwind", "Stimulus"],
     link: "",
-    Github: "https://github.com/leonardkenji/gaijintuned",
+    Github: "https://github.com/leonardkenji/prato",
   },
   {
     title: "Spring Boot CRUD Rest API",
