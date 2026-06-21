@@ -5,7 +5,7 @@ const personalProjects = [
     title: "CTBJJ - Webb App Front-end",
     description: "CTBJJ academy management system frontend (Brazilian Jiu-Jitsu). Enables student check-in via QR Code, attendance tracking, class and schedule management, plus a public institutional page.",
     image: "/ctbjj-port.png",
-    tags: ["TypeScript", "React"https://prato-app-32a2f7598fcc.herokuapp.com/],
+    tags: ["TypeScript", "React"],
     link: "https://kenjitest.online/",
     Github: "https://github.com/leonardkenji/main",
   },
