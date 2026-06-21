@@ -2,6 +2,22 @@ import { ExternalLink } from "lucide-react";
 
 const personalProjects = [
   {
+    title: "CTBJJ - Webb App Front-end",
+    description: "CTBJJ academy management system frontend (Brazilian Jiu-Jitsu). Enables student check-in via QR Code, attendance tracking, class and schedule management, plus a public institutional page.",
+    image: "/ctbjj-port.png",
+    tags: ["TypeScript", "React"],
+    link: "https://kenjitest.online/",
+    Github: "https://github.com/leonardkenji/main",
+  },
+  {
+    title: "CTBJJ - RESTful API for a BJJ academy",
+    description: "JAVA backend - Rest API with JAVA and Spring Boot for an MVC and using PostgreSQL as database.",
+    image: "/JavaSpringBoot.png",
+    tags: ["Java", "SpringBoot", "REST API", "PostgreSQL", "Postman"],
+    link: "https://kenjitest.online/",
+    Github: "https://github.com/leonardkenji/main",
+  },
+  {
     title: "Prato - Recipes App for selective eating",
     description: "A full-stack recipe repository built with Ruby on Rails, designed for selective eaters. Features advanced filtering by color, temperature, taste, and consistency to help users find the perfect meal.",
     image: "/prato.png",
