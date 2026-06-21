@@ -5,7 +5,7 @@ const personalProjects = [
     title: "CTBJJ - Webb App Front-end",
     description: "CTBJJ academy management system frontend (Brazilian Jiu-Jitsu). Enables student check-in via QR Code, attendance tracking, class and schedule management, plus a public institutional page.",
     image: "/ctbjj-port.png",
-    tags: ["TypeScript", "React"],
+    tags: ["TypeScript", "React"https://prato-app-32a2f7598fcc.herokuapp.com/],
     link: "https://kenjitest.online/",
     Github: "https://github.com/leonardkenji/main",
   },
@@ -22,7 +22,7 @@ const personalProjects = [
     description: "A full-stack recipe repository built with Ruby on Rails, designed for selective eaters. Features advanced filtering by color, temperature, taste, and consistency to help users find the perfect meal.",
     image: "/prato.png",
     tags: ["Ruby", "Rails", "PostgreSQL", "Tailwind", "Stimulus"],
-    link: "",
+    link: "https://prato-app-32a2f7598fcc.herokuapp.com/",
     Github: "https://github.com/leonardkenji/prato",
   },
   {
